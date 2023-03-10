@@ -1,182 +1,184 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE html lang="PT-BR">
 <head>
 	<title>Página inícial</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Alexana&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Alexana&display=swap" rel="stylesheet">
 
-<style>
-  body {
-    margin: 0px;
-    padding: 0px;
-    font-family: Arial, sans-serif;
-}
+	<style>
 
-header {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    position: fixed;
-    width: 100%;
-}
+		body {
+		    margin: 0px;
+		    padding: 0px;
+		    font-family: Arial, sans-serif;
+		}
 
-header h1 {
-    margin: 0;
-}
+		header {
+		    background-color: #333;
+		    color: #fff;
+		    padding: 20px;
+		    display: flex;
+		    align-items: center;
+		    justify-content: space-around;
+		    position: fixed;
+		    width: 100%;
+		}
 
-nav ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    display: flex;
-}
+		header h1 {
+		    margin: 0;
+		}
 
-nav ul li {
-    margin-right: 20px;
-    display: flex;
-    justify-items: end;
-}
+		nav ul {
+		    margin: 0;
+		    padding: 0;
+		    list-style: none;
+		    display: flex;
+		}
 
-nav ul li:last-child {
-    margin-right: 0;
-}
+		nav ul li {
+		    margin-right: 20px;
+		    display: flex;
+		    justify-items: end;
+		}
 
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-}
+		nav ul li:last-child {
+		    margin-right: 0;
+		}
 
-nav ul li a:hover {
-    text-decoration: underline;
-}
+		nav ul li a {
+		    color: #fff;
+		    text-decoration: none;
+		}
 
-#hero {
-    background-color: #eee;
-    padding: 100px;
-    text-align: center;
-}
+		nav ul li a:hover {
+		    text-decoration: underline;
+		}
 
-#hero h2 {
-    margin-top: 0;
-}
+		#hero {
+		    background-color: #eee;
+		    padding: 100px;
+		    text-align: center;
+		}
 
-#hero p {
-    font-size: 1.2rem;
-    line-height: 1.5;
-}
+		#hero h2 {
+		    margin-top: 0;
+		}
 
-.btn {
-    display: inline-block;
-    padding: 10px;
-    background-color: #333;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s ease-in-out;
-}
+		#hero p {
+		    font-size: 1.2rem;
+		    line-height: 1.5;
+		}
 
-.btn:hover {
-    background-color: #444;
-}
+		.btn {
+		    display: inline-block;
+		    padding: 10px;
+		    background-color: #333;
+		    color: #fff;
+		    text-decoration: none;
+		    border-radius: 5px;
+		    transition: background-color 0.3s ease-in-out;
+		}
 
-#featured-services {
-    background-color: #fff;
-    padding: 50px;
-    text-align: center;
-}
+		.btn:hover {
+		    background-color: #444;
+		}
 
-#featured-services h2 {
-    margin-top: 0;
-}
+		#featured-services {
+		    background-color: #fff;
+		    padding: 50px;
+		    text-align: center;
+		}
 
-.services {
-    display: flex;
-    justify-content: center;
-    margin-top: 30px;
-}
+		#featured-services h2 {
+		    margin-top: 0;
+		}
 
-.service {
-    margin-right: 30px;
-    padding: 20px;
-    text-align: center;
-    background-color: #eee;
-    border-radius: 5px;
-    transition: background-color 0.3s ease-in-out;
-}
+		.services {
+		    display: flex;
+		    justify-content: center;
+		    margin-top: 30px;
+		}
 
-.service:hover {
-    background-color: #ccc;
-}
+		.service {
+		    margin-right: 30px;
+		    padding: 20px;
+		    text-align: center;
+		    background-color: #eee;
+		    border-radius: 5px;
+		    transition: background-color 0.3s ease-in-out;
+		}
 
-.service img {
-    display: block;
-    margin-bottom: 10px;
-    max-width: 100%;
-    height: auto;
-    border-radius: 5px;
-}
+		.service:hover {
+		    background-color: #ccc;
+		}
 
-.service h3 {
-    margin-top: 0;
-}
+		.service img {
+		    display: block;
+		    margin-bottom: 10px;
+		    max-width: 100%;
+		    height: auto;
+		    border-radius: 5px;
+		}
 
-.service p {
-    font-size: 1.2rem;
-    line-height: 1.5;
-}
+		.service h3 {
+		    margin-top: 0;
+		}
 
-#about-us {
-  background-color: #fff;
-  padding: 50px;
-  text-align: center;
-}
+		.service p {
+		    font-size: 1.2rem;
+		    line-height: 1.5;
+		}
 
-#about-us h2 {
-  margin-top: 0;
-}
+		#about-us {
+		  background-color: #fff;
+		  padding: 50px;
+		  text-align: center;
+		}
 
-#about-us p {
-  font-size: 1.2rem;
-  line-height: 1.5;
-  margin-bottom: 20px;
-}
+		#about-us h2 {
+		  margin-top: 0;
+		}
 
-.about-content {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-}
+		#about-us p {
+		  font-size: 1.2rem;
+		  line-height: 1.5;
+		  margin-bottom: 20px;
+		}
 
-.about-text {
-  flex-basis: 50%;
-}
+		.about-content {
+		  display: flex;
+		  flex-wrap: wrap;
+		  justify-content: center;
+		  align-items: center;
+		}
 
-.about-image {
-  flex-basis: 50%;
-}
+		.about-text {
+		  flex-basis: 50%;
+		}
 
-.about-image img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-  margin: 0 auto;
-  border-radius: 50%;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-}
+		.about-image {
+		  flex-basis: 50%;
+		}
+
+		.about-image img {
+		  display: block;
+		  max-width: 100%;
+		  height: auto;
+		  margin: 0 auto;
+		  border-radius: 50%;
+		  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+		}
 
 
 
-footer {
-    background-color: #333;
-    color: #fff;
-    padding: 5px;
-    text-align: center;
-}
-</style>
+		footer {
+		    background-color: #333;
+		    color: #fff;
+		    padding: 5px;
+		    text-align: center;
+		}
+	</style>
+	
 </head>
 <body>
 	<header>
@@ -196,9 +198,9 @@ footer {
 
 
     <section id="hero">
-      <h2>Bem-vindo</h2>
-      <p>Esta é uma página de demonstração criada para ilustrar como você pode aplicar os princípios da Gestalt em seu design de website.</p>
-      <a href="#" class="btn">Saiba Mais</a>
+	<h2>Bem-vindo</h2>
+	<p>Esta é uma página de demonstração criada para ilustrar como você pode aplicar os princípios da Gestalt em seu design de website.</p>
+	<a href="#" class="btn">Saiba Mais</a>
     </section>
 
 
