@@ -1,9 +1,8 @@
 <!DOCTYPE html lang="PT-BR">
 <head>
-	<title>Página inícial</title>
+	<title>STYLE</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="style.css">
-	<link href="https://fonts.googleapis.com/css2?family=Alexana&display=swap" rel="stylesheet">
 
 	<style>
 
@@ -12,6 +11,8 @@
 		    padding: 0px;
 		    font-family: Arial, sans-serif;
 		}
+
+      /*cabeçalho*/
 
 		header {
 		    background-color: #333;
@@ -54,17 +55,19 @@
 		    text-decoration: underline;
 		}
 
-		#hero {
+      /*Bem-vindo*/
+		
+    		#inicio {
 		    background-color: #eee;
 		    padding: 100px;
 		    text-align: center;
 		}
 
-		#hero h2 {
+		#inicio h2 {
 		    margin-top: 0;
 		}
 
-		#hero p {
+		#inicio p {
 		    font-size: 1.2rem;
 		    line-height: 1.5;
 		}
@@ -82,24 +85,26 @@
 		.btn:hover {
 		    background-color: #444;
 		}
+      
+      /*Serviços*/
 
-		#featured-services {
+		#servicosPrin {
 		    background-color: #fff;
 		    padding: 50px;
 		    text-align: center;
 		}
 
-		#featured-services h2 {
+		#servicosPrin h2 {
 		    margin-top: 0;
 		}
 
-		.services {
+		.servicos {
 		    display: flex;
 		    justify-content: center;
 		    margin-top: 30px;
 		}
 
-		.service {
+		.servico {
 		    margin-right: 30px;
 		    padding: 20px;
 		    text-align: center;
@@ -108,11 +113,11 @@
 		    transition: background-color 0.3s ease-in-out;
 		}
 
-		.service:hover {
+		.servico:hover {
 		    background-color: #ccc;
 		}
 
-		.service img {
+		.servico img {
 		    display: block;
 		    margin-bottom: 10px;
 		    max-width: 100%;
@@ -120,26 +125,28 @@
 		    border-radius: 5px;
 		}
 
-		.service h3 {
+		.servico h3 {
 		    margin-top: 0;
 		}
 
-		.service p {
+		.servico p {
 		    font-size: 1.2rem;
 		    line-height: 1.5;
 		}
 
-		#about-us {
+      /*Sobre Nós*/
+
+		#sobre-nos {
 		  background-color: #fff;
 		  padding: 50px;
 		  text-align: center;
 		}
 
-		#about-us h2 {
+		#sobre-nos h2 {
 		  margin-top: 0;
 		}
 
-		#about-us p {
+		#sobre-nos p {
 		  font-size: 1.2rem;
 		  line-height: 1.5;
 		  margin-bottom: 20px;
@@ -169,7 +176,7 @@
 		  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 		}
 
-
+    /*Rodape*/
 
 		footer {
 		    background-color: #333;
@@ -180,32 +187,33 @@
 	</style>
 	
 </head>
+
+
 <body>
+
 	<header>
+
 		<h1>STYLE</h1>
 		<nav>
 			<ul>
-				<li><a href="#">Início</a></li>
-				<li><a href="#">Sobre Nós</a></li>
-				<li><a href="#">Serviços</a></li>
-				<li><a href="#">Portfólio</a></li>
-				<li><a href="#">Contato</a></li>
+				<li><a href="#inicio">Início</a></li>
+				<li><a href="#sobre-nos">Sobre Nós</a></li>
+				<li><a href="#servicosPrin">Serviços</a></li>
+				<li><a href="#contato">Contato</a></li>
 			</ul>
 		</nav>
+
 	</header>
 
   <main>
 
-
-    <section id="hero">
+    <section id="inicio">
 	<h2>Bem-vindo</h2>
 	<p>Esta é uma página de demonstração criada para ilustrar como você pode aplicar os princípios da Gestalt em seu design de website.</p>
 	<a href="#" class="btn">Saiba Mais</a>
     </section>
 
-
-
-    <section id="about-us">
+    <section id="sobre-nos">
       <div class="container">
         <div class="about-content">
           <div class="about-text">
@@ -219,30 +227,26 @@
       </div>
     </section>
 
-
-
-    <section id="featured-services">
+    <section id="servicosPrin">
       <h2>Nossos Serviços em Destaque</h2>
-      <div class="services">
-        <div class="service">
+      <div class="servicos">
+        <div class="servico">
           <img src="https://via.placeholder.com/150" alt="Serviço 1">
           <h3>Serviço 1</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         </div>
-        <div class="service">
+        <div class="servico">
           <img src="https://via.placeholder.com/150" alt="Serviço 2">
           <h3>Serviço 2</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         </div>
-        <div class="service">
+        <div class="servico">
           <img src="https://via.placeholder.com/150" alt="Serviço 3">
           <h3>Serviço 3</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         </div>
       </div>
     </section>
-
-
       
   </main>
   
