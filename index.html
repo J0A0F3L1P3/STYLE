@@ -1,257 +1,73 @@
 <!DOCTYPE html lang="PT-BR">
-<head>
-	<title>STYLE</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<head>
+		<title>STYLE</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
 
-	<style>
+	<body>
 
-		body {
-		    margin: 0px;
-		    padding: 0px;
-		    font-family: Arial, sans-serif;
-		}
+		<header>
 
-      /*cabeçalho*/
+			<h1>STYLE</h1>
+			<nav>
+				<ul>
+					<li><a href="#inicio">Início</a></li>
+					<li><a href="#sobre-nos">Sobre Nós</a></li>
+					<li><a href="#servicosPrin">Serviços</a></li>
+					<li><a href="#contato">Contato</a></li>
+				</ul>
+			</nav>
 
-		header {
-		    background-color: #333;
-		    color: #fff;
-		    padding: 20px;
-		    display: flex;
-		    align-items: center;
-		    justify-content: space-around;
-		    position: fixed;
-		    width: 100%;
-		}
+		</header>
 
-		header h1 {
-		    margin: 0;
-		}
+		<main>
 
-		nav ul {
-		    margin: 0;
-		    padding: 0;
-		    list-style: none;
-		    display: flex;
-		}
+			<section id="inicio">
+				<h2>Bem-vindo</h2>
+				<p>Esta é uma página de demonstração criada para ilustrar como você pode aplicar os princípios da Gestalt em seu design de website.</p>
+				<a href="#" class="btn">Saiba Mais</a>
+			</section>
 
-		nav ul li {
-		    margin-right: 20px;
-		    display: flex;
-		    justify-items: end;
-		}
+			<section id="sobre-nos">
+				<div class="container">
+					<div class="about-content">
+						<div class="about-text">
+							<h2>Sobre Nós</h2>
+							<p>Somos uma empresa dedicada a fornecer serviços de alta qualidade em design gráfico e web. Desde o início, nosso objetivo tem sido fornecer soluções criativas e eficazes que atendam às necessidades e expectativas de nossos clientes.</p>
+						</div>
+						<div class="about-image">
+							<img src="https://via.placeholder.com/400x400" alt="Imagem ilustrativa">
+						</div>
+					</div>
+				</div>
+			</section>
 
-		nav ul li:last-child {
-		    margin-right: 0;
-		}
+			<section id="servicosPrin">
+				<h2>Nossos Serviços em Destaque</h2>
+				<div class="servicos">
+					<div class="servico">
+						<img src="https://via.placeholder.com/150" alt="Serviço 1">
+						<h3>Serviço 1</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+					</div>
+					<div class="servico">
+						<img src="https://via.placeholder.com/150" alt="Serviço 2">
+						<h3>Serviço 2</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+					</div>
+					<div class="servico">
+						<img src="https://via.placeholder.com/150" alt="Serviço 3">
+						<h3>Serviço 3</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+					</div>
+				</div>
+			</section>
 
-		nav ul li a {
-		    color: #fff;
-		    text-decoration: none;
-		}
+		</main>
 
-		nav ul li a:hover {
-		    text-decoration: underline;
-		}
-
-      /*Bem-vindo*/
-		
-    		#inicio {
-		    background-color: #eee;
-		    padding: 100px;
-		    text-align: center;
-		}
-
-		#inicio h2 {
-		    margin-top: 0;
-		}
-
-		#inicio p {
-		    font-size: 1.2rem;
-		    line-height: 1.5;
-		}
-
-		.btn {
-		    display: inline-block;
-		    padding: 10px;
-		    background-color: #333;
-		    color: #fff;
-		    text-decoration: none;
-		    border-radius: 5px;
-		    transition: background-color 0.3s ease-in-out;
-		}
-
-		.btn:hover {
-		    background-color: #444;
-		}
-      
-      /*Serviços*/
-
-		#servicosPrin {
-		    background-color: #fff;
-		    padding: 50px;
-		    text-align: center;
-		}
-
-		#servicosPrin h2 {
-		    margin-top: 0;
-		}
-
-		.servicos {
-		    display: flex;
-		    justify-content: center;
-		    margin-top: 30px;
-		}
-
-		.servico {
-		    margin-right: 30px;
-		    padding: 20px;
-		    text-align: center;
-		    background-color: #eee;
-		    border-radius: 5px;
-		    transition: background-color 0.3s ease-in-out;
-		}
-
-		.servico:hover {
-		    background-color: #ccc;
-		}
-
-		.servico img {
-		    display: block;
-		    margin-bottom: 10px;
-		    max-width: 100%;
-		    height: auto;
-		    border-radius: 5px;
-		}
-
-		.servico h3 {
-		    margin-top: 0;
-		}
-
-		.servico p {
-		    font-size: 1.2rem;
-		    line-height: 1.5;
-		}
-
-      /*Sobre Nós*/
-
-		#sobre-nos {
-		  background-color: #fff;
-		  padding: 50px;
-		  text-align: center;
-		}
-
-		#sobre-nos h2 {
-		  margin-top: 0;
-		}
-
-		#sobre-nos p {
-		  font-size: 1.2rem;
-		  line-height: 1.5;
-		  margin-bottom: 20px;
-		}
-
-		.about-content {
-		  display: flex;
-		  flex-wrap: wrap;
-		  justify-content: center;
-		  align-items: center;
-		}
-
-		.about-text {
-		  flex-basis: 50%;
-		}
-
-		.about-image {
-		  flex-basis: 50%;
-		}
-
-		.about-image img {
-		  display: block;
-		  max-width: 100%;
-		  height: auto;
-		  margin: 0 auto;
-		  border-radius: 50%;
-		  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-		}
-
-    /*Rodape*/
-
-		footer {
-		    background-color: #333;
-		    color: #fff;
-		    padding: 5px;
-		    text-align: center;
-		}
-	</style>
-	
-</head>
-
-
-<body>
-
-	<header>
-
-		<h1>STYLE</h1>
-		<nav>
-			<ul>
-				<li><a href="#inicio">Início</a></li>
-				<li><a href="#sobre-nos">Sobre Nós</a></li>
-				<li><a href="#servicosPrin">Serviços</a></li>
-				<li><a href="#contato">Contato</a></li>
-			</ul>
-		</nav>
-
-	</header>
-
-  <main>
-
-    <section id="inicio">
-	<h2>Bem-vindo</h2>
-	<p>Esta é uma página de demonstração criada para ilustrar como você pode aplicar os princípios da Gestalt em seu design de website.</p>
-	<a href="#" class="btn">Saiba Mais</a>
-    </section>
-
-    <section id="sobre-nos">
-      <div class="container">
-        <div class="about-content">
-          <div class="about-text">
-            <h2>Sobre Nós</h2>
-            <p>Somos uma empresa dedicada a fornecer serviços de alta qualidade em design gráfico e web. Desde o início, nosso objetivo tem sido fornecer soluções criativas e eficazes que atendam às necessidades e expectativas de nossos clientes.</p>
-          </div>
-          <div class="about-image">
-            <img src="https://via.placeholder.com/400x400" alt="Imagem ilustrativa">
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="servicosPrin">
-      <h2>Nossos Serviços em Destaque</h2>
-      <div class="servicos">
-        <div class="servico">
-          <img src="https://via.placeholder.com/150" alt="Serviço 1">
-          <h3>Serviço 1</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </div>
-        <div class="servico">
-          <img src="https://via.placeholder.com/150" alt="Serviço 2">
-          <h3>Serviço 2</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </div>
-        <div class="servico">
-          <img src="https://via.placeholder.com/150" alt="Serviço 3">
-          <h3>Serviço 3</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </div>
-      </div>
-    </section>
-      
-  </main>
-  
-	<footer>
-		<p>Copyright © 2023. Todos os direitos reservados.</p>
-	</footer>
-</body>
+		<footer>
+			<p>Copyright © 2023. Todos os direitos reservados.</p>
+		</footer>
+	</body>
 </html>
